@@ -1,0 +1,106 @@
+/* Body com alinhamento e margens ajustados para telas pequenas */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f4f6f9;
+}
+
+/* Container do formulário */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    margin-top: 30px; /* Afastamento do topo */
+}
+
+/* Estilo do título */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo dos labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Estilo dos inputs */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+/* Estilo do foco dos inputs */
+input:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Estilo do botão */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensagem de sucesso */
+.message {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+    display: none;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, select {
+        font-size: 14px;
+    }
+}
